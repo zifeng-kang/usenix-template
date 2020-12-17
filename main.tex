@@ -88,15 +88,15 @@
 \date{}
 
 % make title bold and 14 pt font (Latex default is non-bold, 16 pt)
-\title{\Large \bf The Greatest Work in Systems Research}
+\title{\Large \bf Flows are Flawed: Towards Effective Exploit Generation and Prevention for DOM-Based Cross-Site Scripting}
 
 %for single author (just remove % characters)
 \author{
-{\rm Me}\\
-VU, Amsterdam
+{\rm Zifeng Kang}\\
+Johns Hopkins University
 \and
-{\rm Other Smart People}\\
-VU, Amsterdam
+{\rm Yinzhi Cao}\\
+Johns Hopkins University
 % copy the following lines to add more authors
 % \and
 % {\rm Name}\\
@@ -108,8 +108,7 @@ VU, Amsterdam
 %-------------------------------------------------------------------------------
 \begin{abstract}
 %-------------------------------------------------------------------------------
-Your abstract text goes here. Just a few facts. Whet our appetites.
-Not more than 200 words, if possible, and preferably closer to 150.
+The past decade has witnessed the rapid evolution of web applications. As their core component, however, client-side JavaScript still suffers from various vulnerabilities, one of which is the notorious DOM-based Cross-Site Scripting (XSS). To make the matter worse, even if the developers write their own escape functions to prevent DOM XSS, our findings show that attackers can still find approaches to bypass them in most cases. To the best of our knowledge, none of the previous works are aware of potential exploits from bypassing such 'endogenous' escape functions, nor do they study the prevalence of them in the wild. To handle this problem, we introduce a novel constraint-solver-based approach that is built upon previous taint-tracking engines. Using our approach, we find that among the ( ) domains ( )\% more exploits in terms of bypassing the endogenous escape functions are generated compared to prior works. Moreover, ( ) 
 \end{abstract}
 
 
@@ -117,15 +116,22 @@ Not more than 200 words, if possible, and preferably closer to 150.
 \section{Introduction}
 %-------------------------------------------------------------------------------
 
-A paragraph of text goes here. Lots of text. Plenty of interesting
-text. Text text text text text text text text text text text text text
-text text text text text text text text text text text text text text
-text text text text text text text text text text text text text text
-text text text text text text text.
-More fascinating text. Features galore, plethora of promises.
+<Synonym for (The past decade has witnessed the rapid evolution of web applications. )>
+
+
+<Synonym for (Client-side JavaScript still suffers from various vulnerabilities, one of which is the notorious DOM-based Cross-Site Scripting (XSS).)> <Definitions for (such 'endogenous' escape functions)>
+
+<Synonym for (To handle this problem, we introduce a novel constraint-solver-based approach that is built upon previous taint-tracking engines. )>
+
+
+In a nutshell, we conclude our main contributions as follows: 
+
+
+<Synonym for (We introduce a novel constraint-solver-based approach to solve the problem. )>
+
 
 %-------------------------------------------------------------------------------
-\section{Footnotes, Verbatim, and Citations}
+\section{Background}
 %-------------------------------------------------------------------------------
 
 Footnotes should be places after punctuation characters, without any
@@ -167,7 +173,7 @@ observing that refs to sections and citations and such are colored and
 clickable in the PDF because of the packages we've included.
 
 %-------------------------------------------------------------------------------
-\section{Floating Figures and Lists}
+\section{Methodology}
 \label{sec:figs}
 %-------------------------------------------------------------------------------
 
@@ -232,6 +238,26 @@ opposed to a new paragraph in its own right.
 
 People often use \texttt{pdflatex} these days for creating pdf-s from
 tex files via the shell. And \texttt{bibtex}, of course. Works for us.
+
+
+
+%-------------------------------------------------------------------------------
+\section{Methodology}
+\label{sec:figs}
+%-------------------------------------------------------------------------------
+
+
+In this section we describe our approach towards DOM XSS detection, exploit generation and prevention. Specifically, we highlight how we do this, that, and that one. 
+
+
+%-------------------------------------------------------------------------------
+\section{Evaluation}
+\label{sec:figs}
+%-------------------------------------------------------------------------------
+
+
+Then, we discuss vulnerabilities detected by our approach. 
+
 
 %-------------------------------------------------------------------------------
 \section*{Acknowledgments}
